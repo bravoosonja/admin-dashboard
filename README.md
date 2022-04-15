@@ -1,4 +1,8 @@
 # Introduction
+The objective is to create an admin dashboard using only HTML and CSS. 
+[Live Demo 👉](https://bravoosonja.github.io/admin-dashboard) 
+This project features: 
+- responsive project cards
 # Skills used
 - CSS grid
 - CSS flexbox
