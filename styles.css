@@ -18,6 +18,8 @@ li {
   --main-color: #a78bfa;
   --accent-color: #c4b5fd;
   --sub-color: #f5f3ff;
+  --light-gray: #e2e8f0;
+  --dark-gray: #cbd5e1;
 }
 
 body {
@@ -32,9 +34,10 @@ body {
 
 #profile-img {
   border-radius: 50%;
-  height: 70px;
+  height: 55px;
   width: auto;
   border: var(--accent-color) solid 3px;
+  background-color: white;
 }
 
 /* header */
@@ -97,13 +100,17 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: left;
-  gap: 20px;
+  gap: 40px;
 }
 
 .top-links {
+  padding-top: 30px;
+  font-size: 20px;
+  gap: 10px;
 }
 
 .bottom-links {
+  padding-top: 70px;
 }
 
 /* main content */
@@ -114,4 +121,44 @@ body {
   grid-template-areas:
     "projects announcements"
     "projects trends";
+  padding: 40px;
+  background-color: var(--dark-gray);
+}
+
+.projects-container {
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.project {
+  background-color: white;
+  border-left: var(--accent-color) 7px solid;
+}
+
+.project-action img {
+  width: 20px;
+  height: auto;
+}
+
+hr {
+  height: 2px;
+  color: var(--dark-gray);
+}
+
+.announcement p {
+  font-size: 14px;
+}
+
+.user-name {
+  font-size: 14px;
+}
+
+.user-info {
+  font-weight: 300;
+  font-size: 12px;
 }
