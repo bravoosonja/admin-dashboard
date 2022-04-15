@@ -14,7 +14,7 @@ li {
   list-style: none;
 }
 
-.root {
+:root {
   --main-color: #a78bfa;
   --accent-color: #c4b5fd;
   --sub-color: #f5f3ff;
@@ -24,7 +24,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-areas:
     "sidebar header"
     "sidebar main-content";
@@ -50,7 +50,7 @@ body {
   grid-area: profile-container;
 }
 
-.welcome-continer {
+.welcome-container {
   grid-area: welcome-container;
 }
 
@@ -58,9 +58,32 @@ body {
   grid-area: btns-container;
 }
 
+.header-btn {
+  background: var(--main-color);
+  border-radius: 999px;
+  box-shadow: var(--main-color) 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
 /* sidebar */
 .sidebar {
   grid-area: sidebar;
+  background-color: var(--main-color);
+  color: white;
 }
 
 /* main content */
