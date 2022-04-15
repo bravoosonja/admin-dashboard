@@ -208,7 +208,7 @@ body {
 .main-content {
   grid-area: main-content;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
 
   grid-template-areas:
     "projects announcements"
@@ -258,11 +258,6 @@ h4 {
   height: auto;
 }
 
-hr {
-  height: 2px;
-  color: var(--dark-gray);
-}
-
 .announcements-container,
 .trending-container {
   background-color: white;
@@ -270,8 +265,29 @@ hr {
   padding: 15px;
 }
 
-.announcement p {
+.announcement {
+  padding: 15px;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: var(--light-gray);
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h6 {
+  font-weight: 600;
   font-size: 15px;
+}
+
+.announcement p {
+  font-size: 13px;
+  padding-bottom: 15px;
 }
 
 .trending-container {
