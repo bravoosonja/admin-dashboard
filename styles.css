@@ -30,6 +30,13 @@ body {
     "sidebar main-content";
 }
 
+#profile-img {
+  border-radius: 50%;
+  height: 70px;
+  width: auto;
+  border: var(--accent-color) solid 3px;
+}
+
 /* header */
 .header {
   grid-area: header;
@@ -38,8 +45,6 @@ body {
   grid-template-areas:
     "search-container profile-container"
     "welcome-container btns-container";
-
-  border: 1px solid gray;
 }
 
 .search-container {
@@ -81,9 +86,24 @@ body {
 
 /* sidebar */
 .sidebar {
+  padding: 35px;
   grid-area: sidebar;
   background-color: var(--main-color);
   color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  gap: 20px;
+}
+
+.top-links {
+}
+
+.bottom-links {
 }
 
 /* main content */
