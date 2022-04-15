@@ -6,6 +6,7 @@
   padding: 0;
   border: 0;
   font-family: "Inter", sans-serif;
+  vertical-align: baseline;
 }
 
 ol,
@@ -14,19 +15,24 @@ li {
   list-style: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 :root {
   --main-color: #a78bfa;
   --accent-color: #c4b5fd;
   --sub-color: #f5f3ff;
   --light-gray: #e2e8f0;
-  --dark-gray: #cbd5e1;
+  --dark-gray: #f1f5f9;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-areas:
     "sidebar header"
     "sidebar main-content";
@@ -110,8 +116,6 @@ body {
 .welcome-profile-container {
   padding-top: 20px;
   grid-area: welcome-container;
-  resize: both;
-  overflow: auto;
   display: grid;
   grid-template-areas: "profile-img welcome-text";
   justify-content: left;
@@ -167,24 +171,37 @@ body {
   grid-area: sidebar;
   background-color: var(--main-color);
   color: white;
-  border-radius: 5px;
   font-weight: 600;
   font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: left;
-  gap: 40px;
+  gap: 70px;
 }
 
 .top-links {
-  padding-top: 30px;
-  font-size: 20px;
-  gap: 10px;
+  padding-top: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
 }
 
 .bottom-links {
-  padding-top: 70px;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+#sidebar-link {
+  font-size: 18px;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar-icons {
+  height: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* main content */
@@ -192,6 +209,7 @@ body {
   grid-area: main-content;
   display: grid;
   grid-template-columns: 2fr 1fr;
+
   grid-template-areas:
     "projects announcements"
     "projects trends";
@@ -199,19 +217,40 @@ body {
   background-color: var(--dark-gray);
 }
 
-.projects-container {
+h4 {
+  font-weight: 600;
+  font-size: 22px;
+  padding: 10px 0 10px 0;
 }
-
 .projects {
   display: grid;
+  resize: both;
+  overflow: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 30px;
+  padding-right: 25px;
 }
 
 .project {
   background-color: white;
   border-left: var(--accent-color) 7px solid;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.project-action {
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
 }
 
 .project-action img {
@@ -224,8 +263,29 @@ hr {
   color: var(--dark-gray);
 }
 
+.announcements-container,
+.trending-container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+
 .announcement p {
-  font-size: 14px;
+  font-size: 15px;
+}
+
+.trending-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "user-profile-img user-info";
+}
+
+.user-profile-img {
+  grid-area: user-profile-img;
+}
+
+.user-info {
+  grid-area: user-info;
 }
 
 .user-name {

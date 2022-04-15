@@ -45,34 +45,35 @@
       </div>
       <div class="top-links">
         <ul>
-          <li><img src="/img/home.png">Home</li>
+          <li><img src="/img/home.png"><a href="#"id="sidebar-link">Home</a></li>
           <li>
-           <img src="/img/profile.png">Profile</li>
-          <li><img src="/img/message.png">Messages</li>
-          <li><img src="/img/history.png">History</li>
-          <li><img src="/img/tasks.png">Tasks</li>
-          <li><img src="/img/community.png">Communities</li>
+           <img src="/img/profile.png" id="sidebar-icon"><a href="#" id="sidebar-link">Profile</a></li>
+          <li><img src="/img/message.png" id="sidebar-icon"><a href="#" id="sidebar-link">Messages</a></li>
+          <li><img src="/img/history.png" id="sidebar-icon"><a href="#" id="sidebar-link">History</a></li>
+          <li><img src="/img/tasks.png" id="sidebar-icon"><a href="#" id="sidebar-link">Tasks</a></li>
+          <li><img src="/img/community.png" id="sidebar-icon"><a href="#" id="sidebar-link">Communities</a></li>
         </ul>
       </div>
       <div class="bottom-links">
         <ul>
-          <li><img src="/img/settings.png">Settings</li>
-          <li><img src="/img/support.png">Support</li>
-          <li><img src="/img/Privacy.png">Privacy</li>
+          <li><img src="/img/settings.png" id="sidebar-icon"><a href="#" id="sidebar-link">Settings</a></li>
+          <li><img src="/img/support.png" id="sidebar-icon"><a href="#"id="sidebar-link">Support</a></li>
+          <li><img src="/img/Privacy.png" id="sidebar-icon"><a href="#"id="sidebar-link">Privacy</a></li>
         </ul>
       </div>
     </nav>
     <main class="main-content">
+     
       <div class="projects-container">
-        <h4>Your Projects</h4>
+        <h4 >Your Projects</h4>
+        <div class="projects">
         <div class="project">
           <div class="project-text">
             <h5 class="project-name">Super Cool Project</h5>
             <p class="project-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               expedita corporis culpa architecto veniam officiis quos, saepe
-              voluptate explicabo aliquid, labore earum in eveniet eos aperiam,
-              a rem? Illum, accusantium.
+              voluptate explicabo aliquid
             </p>
           </div>
           <div class="project-action">
@@ -87,8 +88,7 @@
             <p class="project-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               expedita corporis culpa architecto veniam officiis quos, saepe
-              voluptate explicabo aliquid, labore earum in eveniet eos aperiam,
-              a rem? Illum, accusantium.
+              voluptate explicabo aliquid
             </p>
           </div>
           <div class="project-action">
@@ -97,14 +97,13 @@
             <img src="/img/share.png">
           </div>
         </div>
-        <div class="project">
+        <div class="project" >
           <div class="project-text">
             <h5 class="project-name">Impossible App</h5>
             <p class="project-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               expedita corporis culpa architecto veniam officiis quos, saepe
-              voluptate explicabo aliquid, labore earum in eveniet eos aperiam,
-              a rem? Illum, accusantium.
+              voluptate explicabo aliquid
             </p>
           </div>
           <div class="project-action">
@@ -119,8 +118,7 @@
             <p class="project-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               expedita corporis culpa architecto veniam officiis quos, saepe
-              voluptate explicabo aliquid, labore earum in eveniet eos aperiam,
-              a rem? Illum, accusantium.
+              voluptate explicabo aliquid
             </p>
           </div>
           <div class="project-action">
@@ -135,8 +133,7 @@
             <p class="project-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               expedita corporis culpa architecto veniam officiis quos, saepe
-              voluptate explicabo aliquid, labore earum in eveniet eos aperiam,
-              a rem? Illum, accusantium.
+              voluptate explicabo aliquid
             </p>
           </div>
           <div class="project-action">
@@ -151,8 +148,7 @@
             <p class="project-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               expedita corporis culpa architecto veniam officiis quos, saepe
-              voluptate explicabo aliquid, labore earum in eveniet eos aperiam,
-              a rem? Illum, accusantium.
+              voluptate explicabo aliquid
             </p>
           </div>
           <div class="project-action">
@@ -162,9 +158,11 @@
           </div>
         </div>
       </div>
+      </div>
       <div class="content-sidebar">
+        <h4>Announcements</h4>
         <div class="announcements-container">
-          <h4>Announcements</h4>
+          
           <div class="announcement">
             <h6>Site Maintenance</h6>
             <p>
@@ -192,34 +190,42 @@
             </p>
           </div>
         </div>
+        <h4 >Trending</h4>
         <div class="trending-container">
-          <h4>Trending</h4>
           <div class="trend-1">
             <div class="profile-container"></div>
-           <img src="https://joeschmoe.io/api/v1/joe" class="profile-img">
+            <div class="user-profile-img"><img src="https://joeschmoe.io/api/v1/joe" class="profile-img"></div>
+           <div class="user-info">
               <p class="username">@tegan</p>
-              <p class="user-info">World Peace Builder</p>
+              <p class="user-project">World Peace Builder</p>
             </div>
-          </div>
+            </div>
+          
           <div class="trend-2">
             <div class="profile-container"></div>
-            <img src="https://joeschmoe.io/api/v1/jane" class="profile-img">
-              <p class="username">@morgan</p>
-              <p class="user-info">Super Cool Project</p>
+             <div class="user-profile-img"><img src="https://joeschmoe.io/api/v1/jane" class="profile-img"></div>
+             <div class="user-info"> 
+             <p class="username">@morgan</p>
+              <p class="user-project">Super Cool Project</p>
             </div>
-          </div>
+            </div>
+          
           <div class="trend-3">
             <div class="profile-container"></div>
-            <img src="https://joeschmoe.io/api/v1/jenni" class="profile-img">
-              <p class="username">@kendall</p>
-              <p class="user-info">Life Changing App</p>
+             <div class="user-profile-img"><img src="https://joeschmoe.io/api/v1/jenni" class="profile-img"></div>
+             <div class="user-info"> 
+             <p class="username">@kendall</p>
+              <p class="user-project">Life Changing App</p>
             </div>
-          </div>
+            </div>
+          
           <div class="trend-4">
             <div class="profile-container"></div>
-            <img src="https://joeschmoe.io/api/v1/james" class="profile-img" >
-              <p class="username">@alex</p>
-              <p class="user-info">No Traffic Maker</p>
+             <div class="user-profile-img"><img src="https://joeschmoe.io/api/v1/james" class="profile-img" ></div>
+             <div class="user-info"> 
+             <p class="username">@alex</p>
+              <p class="user-project">No Traffic Maker</p>
+            </div>
             </div>
           </div>
         </div>
