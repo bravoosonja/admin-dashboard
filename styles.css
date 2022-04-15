@@ -34,7 +34,7 @@ body {
 
 .profile-img {
   border-radius: 50%;
-  height: 55px;
+  height: 45px;
   width: auto;
   border: var(--accent-color) solid 3px;
   background-color: white;
@@ -42,6 +42,7 @@ body {
 
 /* header */
 .header {
+  padding: 20px 35px 20px 35px;
   grid-area: header;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -56,7 +57,6 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 35px;
 }
 
 #search-input {
@@ -96,23 +96,48 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 35px;
+
   gap: 20px;
   font-size: 16px;
   font-weight: 600;
 }
 
 #user-profile-img {
-  height: 40px;
+  height: 35px;
   width: auto;
 }
 
-.profile-container .welcome-container {
+.welcome-profile-container {
+  padding-top: 20px;
   grid-area: welcome-container;
+  resize: both;
+  overflow: auto;
+  display: grid;
+  grid-template-areas: "profile-img welcome-text";
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome-profile-img {
+  grid-area: profile-img;
+}
+
+#welcome-profile-img {
+  height: 80px;
+}
+.welcome-text {
+  grid-area: welcome-text;
+  font-size: 18px;
 }
 
 .btns-container {
   grid-area: btns-container;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 17px;
 }
 
 .header-btn {
