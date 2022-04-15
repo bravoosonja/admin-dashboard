@@ -290,25 +290,29 @@ h6 {
   padding-bottom: 15px;
 }
 
+/* trending  */
 .trending-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas: "user-profile-img user-info";
+  display: flex;
+  flex-direction: column;
 }
 
-.user-profile-img {
-  grid-area: user-profile-img;
+.user-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .user-info {
-  grid-area: user-info;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .user-name {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 400;
 }
 
-.user-info {
+.user-project {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
 }
