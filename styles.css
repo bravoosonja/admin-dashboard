@@ -25,6 +25,8 @@ a {
   --accent-color: #c4b5fd;
   --sub-color: #f5f3ff;
   --dark-gray: #e5e7eb;
+  --box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 body {
@@ -40,6 +42,7 @@ body {
 /* header */
 .header {
   padding: 20px 35px 20px 35px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   grid-area: header;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -235,6 +238,7 @@ h4 {
   padding: 15px;
   display: flex;
   flex-direction: column;
+  box-shadow: var(--box-shadow);
 }
 
 .project h5 {
@@ -259,6 +263,7 @@ h4 {
   background-color: white;
   border-radius: 5px;
   padding: 15px;
+  box-shadow: var(--box-shadow);
 }
 
 .announcement {
