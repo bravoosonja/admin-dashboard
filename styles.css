@@ -31,18 +31,10 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 6fr;
   grid-template-areas:
     "sidebar header"
     "sidebar main-content";
-}
-
-.profile-img {
-  border-radius: 50%;
-  height: 45px;
-  width: auto;
-  border: var(--accent-color) solid 3px;
-  background-color: white;
 }
 
 /* header */
@@ -101,15 +93,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 20px;
   font-size: 16px;
   font-weight: 600;
 }
 
 #user-profile-img {
-  height: 20px;
+  height: 45px;
   width: auto;
+  border-radius: 50%;
+  border: var(--accent-color) solid 3px;
+  background-color: white;
 }
 
 .welcome-profile-container {
@@ -128,6 +122,9 @@ body {
 
 #welcome-profile-img {
   height: 80px;
+  border-radius: 50%;
+  border: var(--accent-color) solid 3px;
+  background-color: white;
 }
 .welcome-text {
   grid-area: welcome-text;
@@ -205,14 +202,16 @@ body {
 
 /* main content */
 .main-content {
-  grid-area: main-content;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  grid-template-areas:
-    "projects announcements"
-    "projects trends";
-  padding: 40px;
+.main-grid {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 35px;
+  padding: 35px;
   background-color: var(--dark-gray);
 }
 
@@ -221,14 +220,12 @@ h4 {
   font-size: 22px;
   padding: 10px 0 10px 0;
 }
+
 .projects {
   display: grid;
-  resize: both;
-  overflow: auto;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 30px;
-  padding-right: 25px;
 }
 
 .project {
@@ -293,17 +290,35 @@ h6 {
 .trending-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trending-grid {
 }
 
 .user-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 10px;
+  margin-bottom: 5px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 48px;
+  height: auto;
+  border: var(--accent-color) solid 3px;
+  background-color: white;
+  text-align: left;
 }
 
 .user-info {
-  margin-left: 20px;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
+  padding: 5px;
 }
 
 .user-name {
@@ -313,5 +328,5 @@ h6 {
 
 .user-project {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
 }
