@@ -268,6 +268,12 @@ h4 {
   box-shadow: var(--box-shadow);
 }
 
+.trending-grid {
+  display: grid;
+  grid-column: 1;
+  gap: 5px;
+}
+
 .announcement {
   padding: 15px;
 }
@@ -295,23 +301,19 @@ h6 {
 
 /* trending  */
 .trending-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 1rem;
 }
 
 .trending-grid {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  gap: 0.5rem;
 }
 
 .user-container {
-  display: grid;
-  grid-template-columns: 1fr 7fr;
-  justify-content: center;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  text-align: center;
-  grid-gap: 10px;
-  margin-bottom: 5px;
 }
 
 .profile-img {
@@ -321,11 +323,11 @@ h6 {
   border: var(--accent-color) solid 3px;
   background-color: white;
   text-align: left;
+  margin-right: 10px;
 }
 
 .user-info {
   text-align: left;
-  padding: 5px;
 }
 
 .user-name {
@@ -335,5 +337,5 @@ h6 {
 
 .user-project {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 13px;
 }

@@ -1,6 +1,7 @@
 # Introduction
 The objective is to create an admin dashboard using only HTML and CSS. 
 [Live Demo 👉](https://bravoosonja.github.io/admin-dashboard) 
+
 This project features: 
 - responsive project cards
 - CSS grid layout
@@ -10,7 +11,14 @@ This project features:
 - **CSS**  grid positioning
 - **CSS**  combination of CSS grid and flex on the main content 
 # Lessons learned
-- 
+- Aligning icons and text in a grid. 
+- Aligning Trending section and Your Projects section in a grid
+  ```
+   .trending-grid {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  }
+  ```
 # Future plans
 - [ ] Make font size responsive 
 - [ ] Make content responsive
