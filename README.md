@@ -25,7 +25,7 @@ This project features:
   ```
 # Future plans
 - [ ] Convert CSS units to relative
-- [ ] Refactor code
+- [x] Refactor code
 - [x] Update Readme
 # Credit
 User profile images from [joeschmoe](https://joeschmoe.io/)
