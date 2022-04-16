@@ -25,6 +25,7 @@ This project features:
   }
   ```
 # Future plans
+- [ ] images with 404 issues on github pages
 - [ ] Convert CSS units to relative
 - [x] Refactor code
 - [x] Update Readme
