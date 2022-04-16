@@ -266,12 +266,13 @@ h4 {
   border-radius: 5px;
   padding: 15px;
   box-shadow: var(--box-shadow);
+  padding: 1rem;
 }
 
-.trending-grid {
+.announcement-grid .trending-grid {
   display: grid;
-  grid-column: 1;
-  gap: 5px;
+  grid-template-rows: auto 1fr 1fr;
+  gap: 0.5rem;
 }
 
 .announcement {
@@ -291,24 +292,15 @@ hr {
 
 h6 {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .announcement p {
   font-size: 13px;
-  padding-bottom: 15px;
+  padding-bottom: 1rem;
 }
 
 /* trending  */
-.trending-container {
-  padding: 1rem;
-}
-
-.trending-grid {
-  display: grid;
-  grid-template-rows: auto 1fr 1fr;
-  gap: 0.5rem;
-}
 
 .user-container {
   display: flex;
