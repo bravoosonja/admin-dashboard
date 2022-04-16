@@ -9,7 +9,7 @@ This project features:
 ## My work
 [Live Demo 👉](https://bravoosonja.github.io/admin-dashboard) 
 
-![Demo](demo/demo.jpg)
+! [Demo](demo/demo.jpg)
 # Skills used
 - **HTML** the use of HTML divs for CSS grid 
 - **CSS**  grid positioning
