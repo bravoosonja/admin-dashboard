@@ -25,7 +25,7 @@ This project features:
   }
   ```
 # Future plans
-- [ ] images with 404 issues on github pages
+- [x] images with 404 issues on github demo page - updated image path
 - [ ] Convert CSS units to relative
 - [x] Refactor code
 - [x] Update Readme
