@@ -11,14 +11,15 @@ This project features:
 - **CSS**  grid positioning
 - **CSS**  combination of CSS grid and flex on the main content 
 # Lessons learned
-- Aligning icons and text in a grid. 
+- Aligning icons and text in a grid on the sidebar. Resolved by adding ```<div class="side-bar-grid"/>``` and making the ```side-bar-conatiner```flex. 
 - Aligning Trending section and Your Projects section in a grid
-  ```
+  ```css
    .trending-grid {
   display: grid;
   grid-template-rows: auto 1fr 1fr;
   }
   ```
 # Future plans
-- [ ] Make font size responsive 
-- [ ] Make content responsive
+- [ ] Convert CSS units to relative
+- [ ] Refactor code
+- [ ] Update Readme
