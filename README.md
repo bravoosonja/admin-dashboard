@@ -4,8 +4,9 @@ This project features:
 - responsive project cards
 - CSS grid layout
 - CSS grid and flex layout
-- 
+
 [👉Live Demo](https://bravoosonja.github.io/admin-dashboard) 
+
 ## Provided design 
 ![Provided design](demo/provided-design.png)
 ## My work
