@@ -1,6 +1,7 @@
 # Introduction
 The objective is to recreate an admin dashboard of the provided design using only HTML and CSS.
 This project features: 
+- responsive project cards
 - CSS grid layout
 - CSS grid and flex layout
 ## Provided design 
@@ -8,7 +9,7 @@ This project features:
 ## My work
 [Live Demo 👉](https://bravoosonja.github.io/admin-dashboard) 
 
-
+[!Demo](/demo/demo.jpg)
 # Skills used
 - **HTML** the use of HTML divs for CSS grid 
 - **CSS**  grid positioning
@@ -25,4 +26,6 @@ This project features:
 # Future plans
 - [ ] Convert CSS units to relative
 - [ ] Refactor code
-- [ ] Update Readme
+- [x] Update Readme
+# Credit
+User profile images from [joeschmoe](https://joeschmoe.io/)
